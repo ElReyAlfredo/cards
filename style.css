@@ -58,14 +58,14 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 600; /* Semibold */
-  font-size: 4vw;
+  font-size: 3.4rem;
 }
 
 .sub-name {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600; /* Semibold */
-  font-size: 2vw;
+  font-size: 1.4rem;
 }
 
 .instagram-logo,
@@ -92,7 +92,6 @@ body {
 
 .main-nav-list {
   list-style: none;
-
   align-items: center;
   gap: 1.6rem; /* Ajustado para un espacio más pequeño en dispositivos más pequeños */
 }
