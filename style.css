@@ -22,7 +22,7 @@ body {
     ),
     url("hats.png");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +31,7 @@ body {
 
 .container {
   /*140*/
-  max-width: 100rem;
-  background-color: black;
-  padding: 0 3.2rem;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -54,7 +52,6 @@ body {
 .title-main,
 .subtitle {
   margin-top: 1.2rem;
-  background-color: orange;
 }
 
 .hero-name {
@@ -82,7 +79,6 @@ body {
 
 .social-media-links {
   margin-top: 2rem;
-  background-color: aqua;
 }
 
 .grid {
@@ -90,8 +86,8 @@ body {
   gap: 5.6rem;
 }
 /*Para hacer columnas reutilizables el primer parametro de repeat es la cantidad de columnas */
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
+.grid--1-cols {
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .main-nav-list {
@@ -103,12 +99,12 @@ body {
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 1rem 2.2rem; /* Ajustado para un padding más pequeño en dispositivos más pequeños */
+  padding: 1rem 3.2rem; /* Ajustado para un padding más pequeño en dispositivos más pequeños */
   border-radius: 9px;
   color: black;
   background-color: #f8f8f8;
-  font-weight: 800;
-  font-size: 1.4rem; /* Ajustado para un tamaño de fuente más pequeño en dispositivos más pequeños */
+  font-weight: 500;
+  font-size: 2.4rem; /* Ajustado para un tamaño de fuente más pequeño en dispositivos más pequeños */
   transition: all 0.3s;
   text-align: center;
   text-decoration: none;
