@@ -31,7 +31,8 @@ body {
 
 .container {
   /*140*/
-  max-width: 120rem;
+  max-width: 100rem;
+  background-color: black;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -53,6 +54,7 @@ body {
 .title-main,
 .subtitle {
   margin-top: 1.2rem;
+  background-color: orange;
 }
 
 .hero-name {
@@ -80,6 +82,7 @@ body {
 
 .social-media-links {
   margin-top: 2rem;
+  background-color: aqua;
 }
 
 .grid {
@@ -91,14 +94,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .main-nav-list {
   list-style: none;
 
@@ -108,12 +103,12 @@ body {
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 1rem 4.2rem; /* Ajustado para un padding más pequeño en dispositivos más pequeños */
+  padding: 1rem 2.2rem; /* Ajustado para un padding más pequeño en dispositivos más pequeños */
   border-radius: 9px;
   color: black;
   background-color: #f8f8f8;
   font-weight: 800;
-  font-size: 1.7rem; /* Ajustado para un tamaño de fuente más pequeño en dispositivos más pequeños */
+  font-size: 1.4rem; /* Ajustado para un tamaño de fuente más pequeño en dispositivos más pequeños */
   transition: all 0.3s;
   text-align: center;
   text-decoration: none;
@@ -121,6 +116,22 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/* Estilos para pantallas más grandes (ajusta según tus necesidades) */
+@media screen and (min-width: 768px) {
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.5rem 3.2rem; /* Ajusta el padding para pantallas más grandes */
+    font-size: 1.6rem; /* Ajusta el tamaño de fuente para pantallas más grandes */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 2rem 4.2rem; /* Ajusta el padding para pantallas aún más grandes */
+    font-size: 1.8rem; /* Ajusta el tamaño de fuente para pantallas aún más grandes */
+  }
+}
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #ddd;
